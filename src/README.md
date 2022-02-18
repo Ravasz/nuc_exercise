@@ -9,7 +9,13 @@ This is a quick draft report with the required exercise results. Feel free to br
 3. The distances were recorded in the [mES\_distances.tsv](mES_distances.tsv) file. 
    - the histogram is presented below, and is also available as a full size image in the repository above.
    
+   
     <img src="test.png"  width="600" height="600">
     
+   
     
-   - In terms of statistical distribution...
+   - In terms of statistical distribution, the distribution of closest regions rougly follows
+   a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687488). A normal distribution with such parameters is fitted as the dotted line in the histogram above, for reference. The quantiles of the distances is as follows:
+|0%         |25%       |50%  |75%      |100%     |
+|-----------|----------|-----|---------|---------|
+|-5754066.5 |-129321.0 |-9.5 |122438.1 |5726707.5| 
