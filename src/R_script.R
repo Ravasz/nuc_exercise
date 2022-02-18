@@ -1,10 +1,31 @@
 # R script comes here
 
-install.packages("tidyverse")
+### Environment ####
+
+# install.packages("tidyverse")
 
 library("tidyverse")
 
-mes_df <- read.csv("/home/mate/code/nucleome/mES.tsv", sep = "\t")
-ter_df <- read.csv("/home/mate/code/nucleome/Ter119.tsv", sep = "\t")
+setwd("/home/mate/git/nuc_exercise/src/")
 
-50000^2
+### distances histogram ####
+
+mes_dist_df <- read.csv("mES_distances.tsv", sep = "\t") %>% 
+  as_tibble() %>%
+  mutate(chr = as_factor(chr)) %>%
+  rename("distance" = dist)
+
+p <- ggplot(mes_dist_df[1:100,], aes(x = distance)) +
+  geom_histogram(
+    binwidth = 200000,
+    aes(y = ..density..),
+    fill = "lightgreen",
+    colour = "black",
+    alpha = 0.8
+  ) +
+  ggtitle("Distribution of minimum distances from nearest sequence") +
+  geom_vline(aes(xintercept = 0), colour = "#000000", size = 0.5) +
+  geom_density(colour = "#888888", fill = "lightblue", alpha = 0.5) +
+  xlim(-3000000,3000000)
+
+ggsave("test.png", p)
