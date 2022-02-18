@@ -26,6 +26,6 @@ p <- ggplot(mes_dist_df[1:100,], aes(x = distance)) +
   ggtitle("Distribution of minimum distances from nearest sequence") +
   geom_vline(aes(xintercept = 0), colour = "#000000", size = 0.5) +
   geom_density(colour = "#888888", fill = "lightblue", alpha = 0.5) +
-  xlim(-3000000,3000000)
+  xlim(-3000000,3000000) 
 
 ggsave("test.png", p)
