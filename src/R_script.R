@@ -3,24 +3,29 @@
 ### Environment ####
 
 # install.packages("tidyverse")
+# install.packages("moments")
 
 library("tidyverse")
+library("moments")
 
 setwd("/home/mate/git/nuc_exercise/src/")
 
 ### distances histogram ####
 
+# load in results from python script exercise_1.py
 mes_dist_df <- read.csv("mES_distances.tsv", sep = "\t") %>% 
   as_tibble() %>%
   mutate(chr = as_factor(chr)) %>%
   rename("distance" = dist)
 
+# basic stats
 dist_mean = mean(mes_dist_df[["distance"]])
 sd_dist = sd(mes_dist_df[["distance"]])
+skew_dist = skewness(mes_dist_df[["distance"]])
+kurt_dist = kurtosis(mes_dist_df[["distance"]])
+quant_dist = quantile(mes_dist_df[["distance"]])
 
-
-
-
+# plot histogram
 p <- ggplot(mes_dist_df[1:100,], aes(x = distance)) +
   geom_histogram(
     binwidth = 200000,
@@ -39,4 +44,5 @@ p <- ggplot(mes_dist_df[1:100,], aes(x = distance)) +
     linetype = "dashed"
   )
 
-ggsave("test.png", p)
+ggsave("hist_dist.png", p)
+
