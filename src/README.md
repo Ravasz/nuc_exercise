@@ -20,5 +20,6 @@ This is a quick draft report with the required exercise results. Feel free to br
    |0%         |25%       |50%  |75%      |100%     |
    |-----------|----------|-----|---------|---------|
    |-5754066.5 |-129321.0 |-9.5 |122438.1 |5726707.5| 
+   
    Note that not all sequences in this data set are unique. Two regions on the Y chromosome are represented twice (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) as they both overlap with two regions in the ter119 data set.
 
