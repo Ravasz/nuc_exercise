@@ -9,7 +9,7 @@ This is a quick draft report with the required exercise results. Feel free to br
 3. The distances were recorded in the [mES\_distances.tsv](mES_distances.tsv) file. 
    - the histogram is presented below, and is also available as a full size image in the repository above.
    
-    <img src="test.png"  width="600" height="600" align="left">
+    <img src="test.png"  width="600" height="600">
     
     
    - In terms of statistical distribution...
