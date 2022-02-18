@@ -23,3 +23,10 @@ This is a quick draft report with the required exercise results. Feel free to br
    
    Note that not all sequences in this data set are unique. Two regions on the Y chromosome are represented twice (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) as they both overlap with two regions in the ter119 data set.
 
+   - Proposing a method for significance testing is challenging for this data set as no replicates are available. In this case, the most straightforward way is to set an arbitrary cutoff for separating significant hits from non-significant ones. While this is not a significance test in itself, it may be an easy and suitable method. A reasonable cutoff might be the 25% and 75% quantiles shown above, which will guarantee to include the most extreme half of the data set. Other reasonable cutoffs may be one or two standard deviations from the mean, depending on what the purpose of subsetting the data set is. 
+   Before setting any cutoff or proposing a method to select significant hits, my honest recommendation would be to get more background on what these chromosomal locations represent, and what is the question the experimenter wishes to answer.
+   
+## Second task
+
+second task to be added here
+   
