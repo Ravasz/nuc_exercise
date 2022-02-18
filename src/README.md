@@ -15,9 +15,10 @@ This is a quick draft report with the required exercise results. Feel free to br
    
     
    - In terms of statistical distribution, the distribution of closest regions roughly follows
-   a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution.The quantiles of the distances are as follows:
-	|0%         |25%       |50%  |75%      |100%     |
-	|-----------|----------|-----|---------|---------|
-	|-5754066.5 |-129321.0 |-9.5 |122438.1 |5726707.5| 
-	Note that not all sequences in this data set are unique. Two regions on the Y chromosome are represented twice (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) as they both overlap with two regions in the ter119 data set.
+   a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution.The quantiles of the distances are as follows:	
+   
+   |0%         |25%       |50%  |75%      |100%     |
+   |-----------|----------|-----|---------|---------|
+   |-5754066.5 |-129321.0 |-9.5 |122438.1 |5726707.5| 
+   Note that not all sequences in this data set are unique. Two regions on the Y chromosome are represented twice (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) as they both overlap with two regions in the ter119 data set.
 
