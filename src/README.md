@@ -17,11 +17,11 @@ This is a quick draft report with the required exercise results. Feel free to br
     
    - In terms of statistical distribution, the distribution of closest regions roughly follows
    a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution. The quantiles of the distances are as follows:	
-   
+   <p align="center">   
    |0%         |25%       |50%  |75%      |100%     |
    |-----------|----------|-----|---------|---------|
    |-5754066.5 |-129321.0 |-9.5 |122438.1 |5726707.5| 
-   
+   </p>
       Note that not all sequences in this data set are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set.
 
    - Proposing a method for significance testing is challenging for this data set as no replicates are available. In this case, the most straightforward way is to set an arbitrary cutoff for separating significant hits from non-significant ones. While this is not a significance test in itself, it may be an easy and suitable method. A reasonable cutoff might be the 25% and 75% quantiles shown above, which will guarantee to include the most extreme half of the data set. Other reasonable cutoffs may be one or two standard deviations from the mean, depending on what the purpose of subsetting the data set is. 
