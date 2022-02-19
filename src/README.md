@@ -22,6 +22,28 @@ This is a quick draft report with the required exercise results. Feel free to br
    |-----------|----------|-----|---------|---------|
    |-5754066.5 |-129321.0 |-9.5 |122438.1 |5726707.5| 
    </p>
+   
+   <table>
+    <thead>
+        <tr>
+            <td>0%</td>
+            <td>25%</td>
+            <td>50%</td>
+            <td>75%</td>
+            <td>75%</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>-5754066.5</td>
+            <td>-129321.0</td>
+            <td>-9.5</td>
+            <td>122438.1</td>
+            <td>5726707.5</td>
+        </tr>
+    </tbody>
+</table>
+   
       Note that not all sequences in this data set are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set.
 
    - Proposing a method for significance testing is challenging for this data set as no replicates are available. In this case, the most straightforward way is to set an arbitrary cutoff for separating significant hits from non-significant ones. While this is not a significance test in itself, it may be an easy and suitable method. A reasonable cutoff might be the 25% and 75% quantiles shown above, which will guarantee to include the most extreme half of the data set. Other reasonable cutoffs may be one or two standard deviations from the mean, depending on what the purpose of subsetting the data set is. 
