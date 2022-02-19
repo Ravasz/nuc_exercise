@@ -15,8 +15,7 @@ This is a quick draft report with the required exercise results. Feel free to br
    </p> 
    <p></p>
     
-   - In terms of statistical distribution, the distribution of closest regions roughly follows
-   a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution. The quantiles of the distances are as follows:	
+   - In the distances data set not all sequences are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set. In terms of statistical distribution, the distribution of closest regions roughly follows a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution. The quantiles of the distances are as follows:	
    
    <table align="center">
     <thead>
@@ -38,10 +37,6 @@ This is a quick draft report with the required exercise results. Feel free to br
         </tr>
     </tbody>
 </table>
-
-<p style="margin-left:50px">
-Note that not all sequences in this data set are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set.
-</p>
 
    - Proposing a method for significance testing is challenging for this data set as no replicates are available. In this case, the most straightforward way is to set an arbitrary cutoff for separating significant hits from non-significant ones. While this is not a significance test in itself, it may be an easy and suitable method. A reasonable cutoff might be the 25% and 75% quantiles shown above, which will guarantee to include the most extreme half of the data set. Other reasonable cutoffs may be one or two standard deviations from the mean, depending on what the purpose of subsetting the data set is. 
    A more interesting solution may be to explore the two shoulders on both sides of the distribution at around 1.9m base pairs in either direction of the mean. However, before setting any cutoff or proposing a method to select significant hits, my honest recommendation would be to get more background on what these chromosomal locations represent, create a model of the underlying biology, and then clarify what is the question the experimenter wishes to answer. Doing this first will ensure that the proposed significance test is both appropriate for the data, and produces useful information.
