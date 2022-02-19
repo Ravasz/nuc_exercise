@@ -9,10 +9,11 @@ This is a quick draft report with the required exercise results. Feel free to br
 3. The distances were recorded in the [mES\_distances.tsv](mES_distances.tsv) file. 
    - The requested histogram is presented below, and is also available as a full size image in the repository above in the file [hist\_dist.png](hist_dist.png). It was generated using the code in [R\_script.R](R_script.R).In the image, the green bars represent the binned counts of distances from each mES region to the nearest sequence in ter119, while the overlaid blue density plot shows the overall spread of the data. The dotted line represents a normal distribution fitted onto the data. The X axis displays the number of bases to the nearest region.
    
-   
+   <p></p>
+   <p align="center">
     <img src="hist_dist.png"  width="600" height="600" padding-top="30px">
-    
-   
+   </p> 
+   <p></p>
     
    - In terms of statistical distribution, the distribution of closest regions roughly follows
    a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution. The quantiles of the distances are as follows:	
