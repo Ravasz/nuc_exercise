@@ -29,5 +29,7 @@ This is a quick draft report with the required exercise results. Feel free to br
 ## Second task
 
 1. Converting the provided SAM file to BED format can be done with [sam2bed](https://bedops.readthedocs.io/en/latest/content/reference/file-management/conversion/sam2bed.html) using the command `sam2bed < chr11.sam > chr11_full.bed`. However, as this defeats the purpose of the exercise, a short script is provided in [sam2bed.py](sam2bed.py). The reulting [chr11.bed](chr11.bed) is also provided.
-2. Exercise 2 comes here
+2. The [wig\_maker.py](wig_maker.py) Python script was added to tackle the final exercise. As span compression was not implemented, the resulting WIG file is 1.3GB in size and consists of 118 843 811 lines, and is therefore not included here. However, it can be regenerated in minutes by executing the script.
+
+On a personal note, I enjoy doing such exercises even just as a learning experience. I am happy to discuss any suggestions especially in case I got something wrong.
    
