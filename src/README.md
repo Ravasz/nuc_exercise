@@ -14,8 +14,9 @@ This is a quick draft report with the required exercise results. Feel free to br
     <img src="hist_dist.png"  width="600" height="600" padding-top="30px">
    </p> 
    <p></p>
-    
-   - In the distances data set not all sequences are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set. In terms of statistical distribution, the distribution of closest regions roughly follows a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution. The quantiles of the distances are as follows:	
+
+- .    
+  - In the distances data set not all sequences are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set. In terms of statistical distribution, the distribution of closest regions roughly follows a normal distribution with an almost perfectly centred mean (-2381.284) but a relatively large spread (sd = 687 488). A normal distribution with such parameters is fitted as the dotted line in the histogram above for reference. The unimodal distribution has a mild positive skew (0.097) and a kurtosis of 15.72 implying that more values are centred near the mean than in a normal distribution. The quantiles of the distances are as follows:	
    
 <table align="center">
     <thead>
