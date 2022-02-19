@@ -10,7 +10,7 @@ This is a quick draft report with the required exercise results. Feel free to br
    - The requested histogram is presented below, and is also available as a full size image in the repository above in the file [hist\_dist.png](hist_dist.png). It was generated using the code in [R\_script.R](R_script.R).In the image, the green bars represent the binned counts of distances from each mES region to the nearest sequence in ter119, while the overlaid blue density plot shows the overall spread of the data. The dotted line represents a normal distribution fitted onto the data. The X axis displays the number of bases to the nearest region.
    
    
-    <img src="hist_dist.png"  width="600" height="600">
+    <img src="hist_dist.png"  width="600" height="600" top="30" left="30">
     
    
     
