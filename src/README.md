@@ -39,7 +39,7 @@ This is a quick draft report with the required exercise results. Feel free to br
     </tbody>
 </table>
 
-<p style="margin-left:50px>
+<p style="margin-left:50px">
 Note that not all sequences in this data set are unique. Apart from 52 780 unique mES sequences, Two regions on the Y chromosome (`chrY, 2787892, 2791530` and `chrY, 2864348, 2868197`) are represented twice as they both overlap with two regions in the ter119 data set.
 </p>
 
