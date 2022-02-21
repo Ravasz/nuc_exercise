@@ -26,7 +26,7 @@ kurt_dist = kurtosis(mes_dist_df[["distance"]])
 quant_dist = quantile(mes_dist_df[["distance"]])
 
 # plot histogram
-p <- ggplot(mes_dist_df[1:100,], aes(x = distance)) +
+p <- ggplot(mes_dist_df, aes(x = distance)) +
   geom_histogram(
     binwidth = 200000,
     aes(y = ..density..),
@@ -37,7 +37,7 @@ p <- ggplot(mes_dist_df[1:100,], aes(x = distance)) +
   ggtitle("Distribution of minimum distances from nearest sequence") +
   geom_vline(aes(xintercept = 0), colour = "#000000", size = 0.5) +
   geom_density(colour = "#888888", fill = "lightblue", alpha = 0.5) +
-  xlim(-3000000,3000000) +
+  xlim(-5500000,5500000) +
   stat_function(
     fun = dnorm, 
     args = list(mean = dist_mean, sd = sd_dist), 
